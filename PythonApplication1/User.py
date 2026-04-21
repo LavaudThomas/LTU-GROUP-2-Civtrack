@@ -25,7 +25,7 @@ class User:
         print("Password updated")
 
     def submitReport(self, report):
-        print(f"{self._username} submitted a report: {report.title}")
+       print(f"{self._username} submitted a report: {report._incidentType}")
 
 
 

@@ -23,6 +23,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Admin.py" />
+    <Compile Include="Comment.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="incident_status.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Report.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Timestamp.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="User.py" />
     <Compile Include="Main.py" />
   </ItemGroup>
