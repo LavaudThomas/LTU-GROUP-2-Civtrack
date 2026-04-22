@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Civic Track</title>
+</head>
+<body>
+
+    <h1>Civic Track</h1>
+
+    <hr>
+
+    <h2>Create User</h2>
+    <form action="/create_user" method="post">
+        <input type="text" name="username" placeholder="Username"><br>
+        <input type="text" name="email" placeholder="Email"><br>
+        <input type="password" name="password" placeholder="Password"><br>
+        <button type="submit">Create User</button>
+    </form>
+
+    <hr>
+
+    <h2>Submit Report</h2>
+    <form action="/submit_report" method="post">
+        <input type="text" name="username" placeholder="Username"><br>
+        <input type="text" name="incident" placeholder="Incident Type"><br>
+        <input type="text" name="description" placeholder="Description"><br>
+        <input type="text" name="location" placeholder="Location"><br>
+        <button type="submit">Submit Report</button>
+    </form>
+
+</body>
+</html>

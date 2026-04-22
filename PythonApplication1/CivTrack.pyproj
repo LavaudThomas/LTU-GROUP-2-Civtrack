@@ -35,11 +35,18 @@
     <Compile Include="Report.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="supabase_client.py" />
     <Compile Include="Timestamp.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="User.py" />
     <Compile Include="Main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="templates\index.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
