@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>System Stats</title>
+</head>
+<body>
+
+    <h1>System Statistics</h1>
+
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/reports">Reports</a>
+        <a href="/admin">Admin</a>
+        <a href="/stats">Stats</a>
+    </div>
+
+    <div class="container">
+
+        <!-- SUMMARY CARDS -->
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h3>Total Reports</h3>
+                <p class="stat-number">{{ total }}</p>
+            </div>
+
+            <div class="stat-card submitted">
+                <h3>Submitted</h3>
+                <p class="stat-number">{{ submitted }}</p>
+            </div>
+
+            <div class="stat-card review">
+                <h3>Under Review</h3>
+                <p class="stat-number">{{ review }}</p>
+            </div>
+
+            <div class="stat-card approved">
+                <h3>Approved</h3>
+                <p class="stat-number">{{ approved }}</p>
+            </div>
+
+            <div class="stat-card resolved">
+                <h3>Resolved</h3>
+                <p class="stat-number">{{ resolved }}</p>
+            </div>
+
+        </div>
+
+        <!-- PROGRESS BAR -->
+        <div class="report-card" style="margin-top:30px;">
+
+            <h3 style="text-align:center;">Resolution Progress</h3>
+
+            {% if total > 0 %}
+            <div class="progress-bar">
+                <div class="progress-fill"
+                     style="width: {{ (resolved / total) * 100 }}%;">
+                </div>
+            </div>
+
+            <p style="text-align:center; margin-top:10px;">
+                {{ ((resolved / total) * 100) | round(1) }}% of reports resolved
+            </p>
+            {% else %}
+            <p style="text-align:center;">No data available</p>
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,32 +1,87 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Civic Track</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>CivTrack</title>
 </head>
 <body>
 
-    <h1>Civic Track</h1>
+    <h1>CivTrack</h1>
 
-    <hr>
+    <!-- NAV -->
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/reports">Reports</a>
+        <a href="/admin">Admin</a>
+        <a href="/stats">Stats</a>
 
-    <h2>Create User</h2>
-    <form action="/create_user" method="post">
-        <input type="text" name="username" placeholder="Username"><br>
-        <input type="text" name="email" placeholder="Email"><br>
-        <input type="password" name="password" placeholder="Password"><br>
-        <button type="submit">Create User</button>
-    </form>
+        {% if session.get('user') %}
+        <span style="margin-left:15px;">
+            Logged in as <b>{{ session.get('user') }}</b>
+        </span>
+        <a href="/logout">Logout</a>
+        {% endif %}
+    </div>
 
-    <hr>
+    <div class="container">
 
-    <h2>Submit Report</h2>
-    <form action="/submit_report" method="post">
-        <input type="text" name="username" placeholder="Username"><br>
-        <input type="text" name="incident" placeholder="Incident Type"><br>
-        <input type="text" name="description" placeholder="Description"><br>
-        <input type="text" name="location" placeholder="Location"><br>
-        <button type="submit">Submit Report</button>
-    </form>
+        <!-- LOGIN CARD -->
+        {% if not session.get('user') %}
+        <div class="card">
+            <h2>Login</h2>
+
+            <form action="/login" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            </form>
+
+            {% if error %}
+            <p style="color:red; text-align:center;">{{ error }}</p>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <!-- CREATE USER CARD -->
+        <div class="card">
+            <h2>Create User</h2>
+
+            <form action="/create_user" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="text" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Create User</button>
+            </form>
+        </div>
+
+        <!-- REPORT CARD -->
+        <div class="card">
+            <h2>Submit Report</h2>
+
+            <form action="/submit_report" method="post" enctype="multipart/form-data">
+
+                <!-- USERNAME NOW AUTO-FILLS IF LOGGED IN -->
+                <input type="text"
+                       name="username"
+                       placeholder="Username"
+                       value="{{ session.get('user') if session.get('user') else '' }}"
+                       required>
+
+                <input type="text" name="incident" placeholder="Incident Type" required>
+
+                <input type="text" name="description" placeholder="Description" required>
+
+                <input type="text" name="location" placeholder="Location" required>
+
+                <!-- IMAGE UPLOAD -->
+                <input type="file" name="image">
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </div>
+
+    </div>
 
 </body>
 </html>

@@ -1,25 +1,56 @@
 ﻿from User import User
+from incident_status import IncidentStatus
+
+
 class Admin(User):
     def __init__(self, userID, username, email, password, adminID):
         super().__init__(userID, username, email, password, isAdmin=True)
         self._adminID = adminID
-        self._pendingReports = []   # report[0..*] → list
 
-    # Public methods
+    # -------------------------
+    # REVIEW (view only)
+    # -------------------------
     def reviewReport(self, report):
-        print(f"Reviewing report: {report.title}")
+        print(f"Reviewing report: {report.getIncidentType()} at {report.getLocation()}")
 
-    def approveReport(self, report):
-        report.status = "Approved"
-        print(f"Report '{report.title}' approved")
+    # -------------------------
+    # APPROVE REPORT
+    # -------------------------
+    def approveReport(self, supabase, report_id):
+        supabase.table("reports").update({
+            "status": IncidentStatus.APPROVED.value
+        }).eq("id", report_id).execute()
 
-    def rejectReport(self, report):
-        report.status = "Rejected"
-        print(f"Report '{report.title}' rejected")
+    # -------------------------
+    # REJECT REPORT (now DELETE handled in Flask, but kept for flexibility)
+    # -------------------------
+    def rejectReport(self, supabase, report_id):
+        supabase.table("reports").delete().eq("id", report_id).execute()
 
-    def updateReportStatus(self, report, status):
-        report.status = status
-        print(f"Report '{report.title}' updated to {status}")
+    # -------------------------
+    # UPDATE STATUS (GENERIC)
+    # -------------------------
+    def updateReportStatus(self, supabase, report_id, status):
+        supabase.table("reports").update({
+            "status": status.value if hasattr(status, "value") else status
+        }).eq("id", report_id).execute()
 
-    def deleteComment(self, comment):
-        print("Comment deleted")
+    # -------------------------
+    # GET PENDING REPORTS (FIXED)
+    # -------------------------
+    def getPendingReports(self, supabase):
+        response = supabase.table("reports").select("*").execute()
+
+        return [
+            r for r in response.data
+            if r["status"] in [
+                IncidentStatus.SUBMITTED.value,
+                IncidentStatus.UNDER_REVIEW.value
+            ]
+        ]
+
+    # -------------------------
+    # DELETE COMMENT (OPTIONAL FEATURE)
+    # -------------------------
+    def deleteComment(self, supabase, comment_id):
+        supabase.table("comments").delete().eq("id", comment_id).execute()

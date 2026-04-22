@@ -5,7 +5,8 @@
     <ProjectGuid>7cfc573c-0b61-40cd-84e0-837676d9b5b6</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Main.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -40,13 +41,21 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="User.py" />
-    <Compile Include="Main.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="static\" />
+    <Folder Include="static\uploads\" />
     <Folder Include="templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="static\style.css" />
+    <Content Include="templates\admin.html" />
     <Content Include="templates\index.html" />
+    <Content Include="templates\reports.html" />
+    <Content Include="templates\report_detail.html" />
+    <Content Include="templates\stats.html" />
+    <Content Include="templates\thank_you.html" />
+    <Content Include="templates\user_created.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

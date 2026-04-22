@@ -1,12 +1,275 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\static\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:static\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\stats.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:templates\\stats.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:templates\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\report_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:templates\\report_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\reports.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:templates\\reports.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:app.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\User.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:User.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\Admin.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:Admin.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\user_created.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:templates\\user_created.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\thank_you.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:templates\\thank_you.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\admin.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:templates\\admin.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\incident_status.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:incident_status.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\Timestamp.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:Timestamp.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\Report.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:Report.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\Comment.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7CFC573C-0B61-40CD-84E0-837676D9B5B6}|CivTrack.pyproj|solutionrelative:Comment.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "report_detail.html",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\report_detail.html",
+              "RelativeDocumentMoniker": "templates\\report_detail.html",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\report_detail.html",
+              "RelativeToolTip": "templates\\report_detail.html",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAqwDMAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-04-22T22:53:22.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "stats.html",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\stats.html",
+              "RelativeDocumentMoniker": "templates\\stats.html",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\stats.html",
+              "RelativeToolTip": "templates\\stats.html",
+              "ViewState": "AQIAACAAAAAAAAAAAAAqwEkAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-04-22T21:26:03.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\index.html",
+              "RelativeDocumentMoniker": "templates\\index.html",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\index.html",
+              "RelativeToolTip": "templates\\index.html",
+              "ViewState": "AQIAABYAAAAAAAAAAAAqwCQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-04-22T18:31:19.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "admin.html",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\admin.html",
+              "RelativeDocumentMoniker": "templates\\admin.html",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\admin.html",
+              "RelativeToolTip": "templates\\admin.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-04-22T19:42:25.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "reports.html",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\reports.html",
+              "RelativeDocumentMoniker": "templates\\reports.html",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\reports.html",
+              "RelativeToolTip": "templates\\reports.html",
+              "ViewState": "AQIAACIAAAAAAAAAAAAqwEsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-04-22T18:36:23.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "thank_you.html",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\thank_you.html",
+              "RelativeDocumentMoniker": "templates\\thank_you.html",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\thank_you.html",
+              "RelativeToolTip": "templates\\thank_you.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-04-22T18:55:25.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "user_created.html",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\user_created.html",
+              "RelativeDocumentMoniker": "templates\\user_created.html",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\templates\\user_created.html",
+              "RelativeToolTip": "templates\\user_created.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-04-22T18:58:07.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "app.py",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\app.py",
+              "RelativeDocumentMoniker": "app.py",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\app.py",
+              "RelativeToolTip": "app.py",
+              "ViewState": "AQIAAAoBAAAAAAAAAAAwwDIBAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-04-22T18:05:19.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\static\\style.css",
+              "RelativeDocumentMoniker": "static\\style.css",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\static\\style.css",
+              "RelativeToolTip": "static\\style.css",
+              "ViewState": "AQIAAPIAAAAAAAAAAAAqwCMBAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-22T19:01:29.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Admin.py",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\Admin.py",
+              "RelativeDocumentMoniker": "Admin.py",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\Admin.py",
+              "RelativeToolTip": "Admin.py",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAwwDcAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-04-22T18:04:05.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.py",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\User.py",
+              "RelativeDocumentMoniker": "User.py",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\User.py",
+              "RelativeToolTip": "User.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-04-22T20:10:16.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "incident_status.py",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\incident_status.py",
+              "RelativeDocumentMoniker": "incident_status.py",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\incident_status.py",
+              "RelativeToolTip": "incident_status.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-04-22T20:05:26.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Timestamp.py",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\Timestamp.py",
+              "RelativeDocumentMoniker": "Timestamp.py",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\Timestamp.py",
+              "RelativeToolTip": "Timestamp.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-04-22T20:05:50.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Report.py",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\Report.py",
+              "RelativeDocumentMoniker": "Report.py",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\Report.py",
+              "RelativeToolTip": "Report.py",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAADMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-04-22T19:49:17.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Comment.py",
+              "DocumentMoniker": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\Comment.py",
+              "RelativeDocumentMoniker": "Comment.py",
+              "ToolTip": "C:\\Users\\tlavaud\\Documents\\GitHub\\LTU-GROUP-2-Civtrack\\PythonApplication1\\Comment.py",
+              "RelativeToolTip": "Comment.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-04-22T18:04:07.695Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

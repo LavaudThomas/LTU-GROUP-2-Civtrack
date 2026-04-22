@@ -4,8 +4,10 @@ class User:
         self._username = username
         self._email = email
         self._password = password
-        self._isAdmin = isAdmin
-        self._isGuest = isGuest
+
+        # normalize booleans (important for Supabase consistency)
+        self._isAdmin = bool(isAdmin)
+        self._isGuest = bool(isGuest)
 
         self._loggedIn = False
 
@@ -25,6 +27,18 @@ class User:
         self._password = newPassword
 
     # -------------------------
+    # GETTERS (IMPORTANT FOR CLEAN USE)
+    # -------------------------
+    def isAdmin(self):
+        return self._isAdmin
+
+    def isGuest(self):
+        return self._isGuest
+
+    def isLoggedIn(self):
+        return self._loggedIn
+
+    # -------------------------
     # CONVERT FOR DATABASE
     # -------------------------
     def to_dict(self):
@@ -32,6 +46,6 @@ class User:
             "username": self._username,
             "email": self._email,
             "password": self._password,
-            "isAdmin": self._isAdmin,
-            "isGuest": self._isGuest
+            "isadmin": self._isAdmin,
+            "isguest": self._isGuest
         }

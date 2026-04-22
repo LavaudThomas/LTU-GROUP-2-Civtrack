@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Report Detail</title>
+</head>
+<body>
+
+    <h1>Incident Detail</h1>
+
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/reports">Back to Reports</a>
+        <a href="/admin">Admin</a>
+    </div>
+
+    <div class="report-card">
+
+        <p><b>Incident:</b> {{ report.get('incident') }}</p>
+        <p><b>Description:</b> {{ report.get('description') }}</p>
+        <p><b>Location:</b> {{ report.get('location') }}</p>
+
+        <p><b>Status:</b> {{ report.get('status') }}</p>
+
+        {% if report.get('image_url') %}
+        <img src="{{ url_for('static', filename='uploads/' + report.get('image_url')) }}">
+        {% endif %}
+
+    </div>
+
+    <hr>
+
+    <h2>Comments</h2>
+
+    {% for c in comments %}
+    <p>{{ c.get('text') }}</p>
+    <small>{{ c.get('timestamp') }}</small>
+    <hr>
+    {% endfor %}
+
+    {% if comments|length == 0 %}
+    <p>No comments yet</p>
+    {% endif %}
+
+    <form method="POST" action="/add_comment">
+        <input type="hidden" name="report_id" value="{{ report.get('id') }}">
+        <input type="text" name="text" placeholder="Add comment">
+        <button type="submit">Post</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>User Created</title>
+</head>
+<body>
+
+    <h1>Account Created Successfully</h1>
+    <p>Your user account has been created.</p>
+
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/reports">Reports</a>
+        <a href="/admin">Admin</a>
+        <a href="/stats">Stats</a>
+    </div>
+    <br><br>
+    {% if error %}
+    <p style="color:red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>

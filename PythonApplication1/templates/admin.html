@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+
+    <h1>Admin Dashboard</h1>
+
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/reports">Reports</a>
+        <a href="/admin">Admin</a>
+        <a href="/stats">Stats</a>
+    </div>
+
+    <hr>
+
+    <!-- SUBMITTED -->
+    <h2>Submitted</h2>
+    {% for r in reports if r['status'] == 'Submitted' %}
+    <div class="report-card">
+        <p><b>Incident:</b> {{ r['incident'] }}</p>
+        <p><b>Description:</b> {{ r['description'] }}</p>
+        <p><b>Location:</b> {{ r['location'] }}</p>
+        <p><b>Status:</b> {{ r['status'] }}</p>
+
+        <div class="actions">
+            <a href="/review/{{ r['id'] }}">Mark Under Review</a>
+            <a href="/approve/{{ r['id'] }}">Approve</a>
+            <a href="/reject/{{ r['id'] }}">Reject</a>
+        </div>
+    </div>
+    {% endfor %}
+
+    <hr>
+
+    <!-- UNDER REVIEW -->
+    <h2>Under Review</h2>
+    {% for r in reports if r['status'] == 'Under Review' %}
+    <div class="report-card">
+        <p><b>Incident:</b> {{ r['incident'] }}</p>
+        <p><b>Description:</b> {{ r['description'] }}</p>
+        <p><b>Location:</b> {{ r['location'] }}</p>
+        <p><b>Status:</b> {{ r['status'] }}</p>
+
+        <div class="actions">
+            <a href="/approve/{{ r['id'] }}">Approve</a>
+            <a href="/reject/{{ r['id'] }}">Reject</a>
+            <a href="/resolve/{{ r['id'] }}">Resolve</a>
+        </div>
+    </div>
+    {% endfor %}
+
+    <hr>
+
+    <!-- APPROVED -->
+    <h2>Approved</h2>
+    {% for r in reports if r['status'] == 'Approved' %}
+    <div class="report-card">
+        <p><b>Incident:</b> {{ r['incident'] }}</p>
+        <p><b>Description:</b> {{ r['description'] }}</p>
+        <p><b>Location:</b> {{ r['location'] }}</p>
+        <p><b>Status:</b> {{ r['status'] }}</p>
+
+        <div class="actions">
+            <a href="/resolve/{{ r['id'] }}">Resolve</a>
+        </div>
+    </div>
+    {% endfor %}
+
+    <hr>
+
+    <!-- RESOLVED (OPTIONAL VIEW ONLY) -->
+    <h2>Resolved</h2>
+    {% for r in reports if r['status'] == 'Issue Resolved' %}
+    <div class="report-card">
+        <p><b>Incident:</b> {{ r['incident'] }}</p>
+        <p><b>Description:</b> {{ r['description'] }}</p>
+        <p><b>Location:</b> {{ r['location'] }}</p>
+        <p><b>Status:</b> {{ r['status'] }}</p>
+    </div>
+    {% endfor %}
+
+</body>
+</html>

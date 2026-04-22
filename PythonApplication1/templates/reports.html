@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Reports Feed</title>
+</head>
+<body>
+
+    <h1>Incident Reports</h1>
+
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/reports">Reports</a>
+        <a href="/admin">Admin</a>
+        <a href="/stats">Stats</a>
+    </div>
+
+    <h2>Search Reports</h2>
+
+    <form method="GET" action="/reports">
+        <input type="text" name="search" maxlength="50"
+               placeholder="Search incident, location, or description">
+        <button type="submit">Search</button>
+    </form>
+
+    <hr>
+
+    {% for r in reports %}
+
+    <div class="report-card">
+
+        <p><b>Incident:</b> {{ r.get('incident') }}</p>
+        <p><b>Description:</b> {{ r.get('description') }}</p>
+        <p><b>Location:</b> {{ r.get('location') }}</p>
+
+        <p><b>Status:</b> {{ r.get('status') }}</p>
+
+        {% if r.get('image_url') %}
+        <img src="{{ url_for('static', filename='uploads/' + r.get('image_url')) }}"
+             class="report-image"
+             onclick="window.open(this.src)">
+        {% endif %}
+
+        <a href="/report/{{ r.get('id') }}" class="view-btn">
+            View Full Report
+        </a>
+
+        <hr>
+
+        <h4>Comments</h4>
+
+        {% if r.get('comments') %}
+        {% for c in r.get('comments') %}
+        <p>{{ c.get('text') }}</p>
+        <small>{{ c.get('timestamp') }}</small>
+        {% endfor %}
+        {% else %}
+        <p><i>No comments yet</i></p>
+        {% endif %}
+
+        <form method="POST" action="/add_comment">
+            <input type="hidden" name="report_id" value="{{ r.get('id') }}">
+            <input type="text" name="text" placeholder="Add comment">
+            <button type="submit">Post</button>
+        </form>
+
+    </div>
+
+    {% endfor %}
+
+    {% if reports|length == 0 %}
+    <p>No reports found.</p>
+    {% endif %}
+
+</body>
+</html>
